@@ -1,70 +1,69 @@
-# KMK: Clackety Keyboards Powered by Python
-![GitHub](https://img.shields.io/github/license/KMKfw/kmk_firmware)
-![GitHub contributors](https://img.shields.io/github/contributors/KMKfw/kmk_firmware)
-![Lines of code](https://img.shields.io/tokei/lines/github/KMKfw/kmk_firmware)
-![GitHub issues](https://img.shields.io/github/issues-raw/KMKfw/kmk_firmware)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/KMKfw/kmk_firmware)
+KMK Firmware Installation Guide for MCU
+=======================================
 
-KMK is a feature-rich and beginner-friendly firmware for computer keyboards
-written and configured in
-[CircuitPython](https://github.com/adafruit/circuitpython).
+Overview
+--------
 
-## Support
+This repository contains instructions for installing KMK firmware on your microcontroller (MCU). KMK is an open-source project designed for keyboard firmware and is easy to set up and customize.
 
-For asynchronous support and chatter about KMK, [join our Zulip
-community](https://kmkfw.zulipchat.com)!
+Prerequisites
+-------------
 
-If you ask for help in chat or open a bug report, if possible
-make sure your copy of KMK is up-to-date.
-In particular, swing by the Zulip chat *before* opening a GitHub Issue about
-configuration, documentation, etc. concerns.
+- Microcontroller compatible with KMK (e.g., ATmega32U4, ESP32)
+- Python 3.x installed on your computer
+- Git installed on your computer
+- A USB cable to connect the MCU to your computer
 
-> The former Matrix and Discord rooms once linked to in this README are no
-> longer officially supported, please do not use them!
+Installation Steps
+------------------
 
-## Features
+1. Clone the Repository
 
-- Fully configured through a single, easy to understand Python file that lives
-  on a "flash-drive"-esque space on your microcontroller - edit on the go
-  without DFU or other dev tooling available!
-- Single-piece or [two-piece split
-  keyboards](/docs/en/split_keyboards.md)
-  are supported
-- [Chainable
-  keys](/docs/en/keys.md) such as
-  `KC.LWIN(KC.L)` to lock the screen on a Windows PC
-- [Built-in Unicode macros, including
-  emojis](/docs/en/macros.md)
-- [RGB underglow](/docs/en/rgb.md)
-  and [LED
-  backlights](/docs/en/led.md)
-- One key can turn into many more based on [how many times you tap
-  it](/docs/en/tapdance.md)
-- Bluetooth HID and split keyboards. No more wires.
+   git clone https://github.com/KMKfw/kmk_firmware.git
+   cd kmk_firmware
 
-## Getting Started
+2. Install Dependencies
 
-KMK requires [CircuitPython](https://circuitpython.org/) version 8.0 or higher.
-Our getting started guide can be found
-[here](/docs/en/Getting_Started.md).
+   Install the required Python packages:
 
-## Contributing
+   pip install -r requirements.txt
 
-Please have a look at the [contributing document](/docs/en/contributing.md), 
-where you can find details about the workflow and code style. If you have 
-specific questions feel free to ask in the [KMK development stream](https://kmkfw.zulipchat.com/#narrow/stream/384078-KMK-development) 
-on Zulip.
+3. Configure Your Keyboard
 
-## License, Copyright, and Legal
+   - Navigate to the `kmk_firmware` directory.
+   - Edit the `config.py` file to match your keyboard layout and key mappings.
 
-All software in this repository is licensed under the [GNU Public License,
-version 3](https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)).
-All documentation and hardware designs are licensed under the [Creative Commons
-Attribution-ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-license.
+4. Build the Firmware
 
-**Due to ethical and legal concerns, any works derived from GitHub Copilot or
-similar artificial intelligence tooling are unacceptable for inclusion in any
-first-party KMK repository or other code collection. We further recommend not
-using GitHub Copilot while developing anything KMK-related, regardless of
-intent to submit upstream.**
+   Run the following command to build the firmware:
+
+   make
+
+5. Flash the Firmware
+
+   Connect your MCU to your computer and flash the firmware using:
+
+   make flash
+
+6. Test Your Keyboard
+
+   After flashing, test your keyboard to ensure all keys are functioning as expected.
+
+Credits
+-------
+
+- KMK Firmware: This project is built upon the KMK firmware. For more information, visit the KMK GitHub Repository:
+  https://github.com/KMKfw/kmk_firmware
+
+- Model Reference: The keyboard model used in this project is based on the "Cyberpunkish Dactyl Manuform Skeleton Edition 3x5+3"
+  by Oleksandr, available on Printables:
+  https://www.printables.com/model/240700-cyberpunkish-dactyl-manuform-skeleton-edition-3x53
+
+License
+-------
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
+
+Feel free to modify the content as needed for your specific project!
