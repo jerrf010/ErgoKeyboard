@@ -1,4 +1,4 @@
-KMK Firmware Installation Guide for MCU
+ErgoKeyboard
 =======================================
 
 Overview
