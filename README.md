@@ -59,11 +59,3 @@ Credits
   by Oleksandr, available on Printables:
   https://www.printables.com/model/240700-cyberpunkish-dactyl-manuform-skeleton-edition-3x53
 
-License
--------
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
----
-
-Feel free to modify the content as needed for your specific project!
