@@ -17,38 +17,10 @@ Prerequisites
 Installation Steps
 ------------------
 
-1. Clone the Repository
+1. Install latest circuitpython build onto your mcu
+2. Copy and paste R/L Keyboard files to the corresponding side of the keyboard. Make sure all pasted items are in the **ROOT** of the circuitypthon drive
 
-   git clone https://github.com/KMKfw/kmk_firmware.git
-   cd kmk_firmware
-
-2. Install Dependencies
-
-   Install the required Python packages:
-
-   pip install -r requirements.txt
-
-3. Configure Your Keyboard
-
-   - Navigate to the `kmk_firmware` directory.
-   - Edit the `config.py` file to match your keyboard layout and key mappings.
-
-4. Build the Firmware
-
-   Run the following command to build the firmware:
-
-   make
-
-5. Flash the Firmware
-
-   Connect your MCU to your computer and flash the firmware using:
-
-   make flash
-
-6. Test Your Keyboard
-
-   After flashing, test your keyboard to ensure all keys are functioning as expected.
-
+   
 Credits
 -------
 
