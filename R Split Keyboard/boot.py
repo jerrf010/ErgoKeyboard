@@ -1,12 +1,4 @@
-from kmk.bootcfg import bootcfg
-
-bootcfg(
-    # optional:
-    sense: Optional[microcontroller.Pin, digitalio.DigitalInOut] = None,
-    source: Optional[microcontroller.Pin, digitalio.DigitalInOut] = None,
-    autoreload: bool = True,
-    boot_deviceÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿalse,
-    storage: bool = True,
-    usb_id: Optional[dict] = {},
-    **kwargs,
-) -> bool
+import storage
+import usb_cdc
+#storage.disable_usb_drive()
+#usb_cdc.disable()
